@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Architectural.FactoryMethod;
+﻿using DesignPatterns.Architectural.Builder;
+using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Singleton;
 
 namespace DesignPatterns
@@ -25,6 +26,9 @@ namespace DesignPatterns
 
             FactoryMethodPatternRunner factoryMethodPatternRunner = new FactoryMethodPatternRunner();
             factoryMethodPatternRunner.RunWithNewLine();
+
+            BuilderPatternRunner builderPatternRunner = new BuilderPatternRunner();
+            builderPatternRunner.RunWithNewLine();
         }
     }
 }
