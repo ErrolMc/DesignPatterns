@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Architectural.Builder;
 using DesignPatterns.Architectural.FactoryMethod;
+using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 
 namespace DesignPatterns
@@ -29,6 +30,9 @@ namespace DesignPatterns
 
             BuilderPatternRunner builderPatternRunner = new BuilderPatternRunner();
             builderPatternRunner.RunWithNewLine();
+
+            PrototypePatternRunner prototypePatternRunner = new PrototypePatternRunner();
+            prototypePatternRunner.RunWithNewLine();
         }
     }
 }
