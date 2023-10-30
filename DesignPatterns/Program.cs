@@ -3,6 +3,7 @@ using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Structural.Adapter;
+using DesignPatterns.Structural.Bridge;
 
 namespace DesignPatterns
 {
@@ -19,10 +20,13 @@ namespace DesignPatterns
         public void Run()
         {
             RunArchitectural();
+            RunStructural();
         }
 
         private void RunArchitectural()
         {
+            Console.WriteLine("Architectural Patterns:");
+
             SingletonPatternRunner singletonPatternRunner = new SingletonPatternRunner();
             singletonPatternRunner.RunWithNewLine();
 
@@ -34,9 +38,17 @@ namespace DesignPatterns
 
             PrototypePatternRunner prototypePatternRunner = new PrototypePatternRunner();
             prototypePatternRunner.RunWithNewLine();
+        }
+
+        public void RunStructural()
+        {
+            Console.WriteLine("Structural Patterns:");
 
             AdapterPatternRunner adapterPatternRunner = new AdapterPatternRunner();
             adapterPatternRunner.RunWithNewLine();
+
+            BridgePatternRunner bridgePatternRunner = new BridgePatternRunner();
+            bridgePatternRunner.RunWithNewLine();
         }
     }
 }
