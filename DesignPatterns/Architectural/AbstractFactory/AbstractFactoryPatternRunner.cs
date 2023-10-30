@@ -1,6 +1,7 @@
 ﻿
 namespace DesignPatterns.Architectural.AbstractFactory
 {
+    // https://refactoring.guru/design-patterns/abstract-factory
     public class AbstractFactoryPatternRunner : PatternRunner
     {
         public override void Run()

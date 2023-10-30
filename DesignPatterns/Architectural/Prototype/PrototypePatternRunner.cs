@@ -1,6 +1,7 @@
 ﻿
 namespace DesignPatterns.Architectural.Prototype
 {
+    // https://refactoring.guru/design-patterns/prototype
     public class PrototypePatternRunner : PatternRunner
     {
         public override void Run()

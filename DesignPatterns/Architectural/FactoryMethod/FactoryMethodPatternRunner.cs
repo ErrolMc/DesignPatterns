@@ -4,7 +4,6 @@ using DesignPatterns;
 namespace DesignPatterns.Architectural.FactoryMethod
 {
     // https://refactoring.guru/design-patterns/factory-method
-
     public class FactoryMethodPatternRunner : PatternRunner
     {
         public override void Run()

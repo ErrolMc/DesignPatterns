@@ -4,7 +4,6 @@ using System;
 namespace DesignPatterns.Architectural.Singleton
 {
     // https://refactoring.guru/design-patterns/singleton 
-
     public class SingletonPatternRunner : PatternRunner
     {
         public override void Run()

@@ -1,6 +1,7 @@
 ﻿
 namespace DesignPatterns.Structural.Adapter
 {
+    // https://refactoring.guru/design-patterns/adapter
     public class AdapterPatternRunner : PatternRunner
     {
         public override void Run()

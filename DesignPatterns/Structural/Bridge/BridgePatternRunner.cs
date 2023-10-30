@@ -1,6 +1,7 @@
 ﻿
 namespace DesignPatterns.Structural.Bridge
 {
+    // https://refactoring.guru/design-patterns/bridge
     public class BridgePatternRunner : PatternRunner
     {
         public override void Run()
