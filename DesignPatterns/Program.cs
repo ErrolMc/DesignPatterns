@@ -2,6 +2,7 @@
 using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
+using DesignPatterns.Structural.Adapter;
 
 namespace DesignPatterns
 {
@@ -33,6 +34,9 @@ namespace DesignPatterns
 
             PrototypePatternRunner prototypePatternRunner = new PrototypePatternRunner();
             prototypePatternRunner.RunWithNewLine();
+
+            AdapterPatternRunner adapterPatternRunner = new AdapterPatternRunner();
+            adapterPatternRunner.RunWithNewLine();
         }
     }
 }
