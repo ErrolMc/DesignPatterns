@@ -2,6 +2,7 @@
 using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
+using DesignPatterns.Behavioral.Command;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Structural.Composite;
@@ -24,6 +25,7 @@ namespace DesignPatterns
         {
             RunArchitectural();
             RunStructural();
+            RunBehavioral();
         }
 
         private void RunArchitectural()
@@ -61,6 +63,14 @@ namespace DesignPatterns
 
             ProxyPatternRunner proxyPatternRunner = new ProxyPatternRunner();
             proxyPatternRunner.RunWithNewLine();
+        }
+
+        public void RunBehavioral()
+        {
+            Console.WriteLine("[ ---- Behavioral Patterns ---- ]");
+
+            CommandPatternRunner commandPatternRunner = new CommandPatternRunner();
+            commandPatternRunner.RunWithNewLine();
         }
     }
 }
