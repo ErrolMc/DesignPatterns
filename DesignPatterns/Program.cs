@@ -6,6 +6,7 @@ using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Structural.Composite;
 using DesignPatterns.Structural.Decorator;
+using DesignPatterns.Structural.Proxy;
 
 namespace DesignPatterns
 {
@@ -27,7 +28,7 @@ namespace DesignPatterns
 
         private void RunArchitectural()
         {
-            Console.WriteLine("Architectural Patterns:");
+            Console.WriteLine("[ ---- Architectural Patterns ---- ]");
 
             SingletonPatternRunner singletonPatternRunner = new SingletonPatternRunner();
             singletonPatternRunner.RunWithNewLine();
@@ -44,7 +45,7 @@ namespace DesignPatterns
 
         public void RunStructural()
         {
-            Console.WriteLine("Structural Patterns:");
+            Console.WriteLine("[ ---- Structural Patterns ---- ]");
 
             AdapterPatternRunner adapterPatternRunner = new AdapterPatternRunner();
             adapterPatternRunner.RunWithNewLine();
@@ -57,6 +58,9 @@ namespace DesignPatterns
 
             CompositePatternRunner compositePatternRunner = new CompositePatternRunner();
             compositePatternRunner.RunWithNewLine();
+
+            ProxyPatternRunner proxyPatternRunner = new ProxyPatternRunner();
+            proxyPatternRunner.RunWithNewLine();
         }
     }
 }
