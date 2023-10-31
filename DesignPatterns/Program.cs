@@ -4,6 +4,7 @@ using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
+using DesignPatterns.Structural.Composite;
 using DesignPatterns.Structural.Decorator;
 
 namespace DesignPatterns
@@ -53,6 +54,9 @@ namespace DesignPatterns
 
             DecoratorPatternRunner decoratorPatternRunner = new DecoratorPatternRunner();
             decoratorPatternRunner.RunWithNewLine();
+
+            CompositePatternRunner compositePatternRunner = new CompositePatternRunner();
+            compositePatternRunner.RunWithNewLine();
         }
     }
 }
