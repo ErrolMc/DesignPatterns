@@ -3,6 +3,7 @@ using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Behavioral.Command;
+using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Structural.Composite;
@@ -71,6 +72,9 @@ namespace DesignPatterns
 
             CommandPatternRunner commandPatternRunner = new CommandPatternRunner();
             commandPatternRunner.RunWithNewLine();
+
+            ObserverPatternRunner observerPatternRunner = new ObserverPatternRunner();
+            observerPatternRunner.RunWithNewLine();
         }
     }
 }
