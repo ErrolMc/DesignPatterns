@@ -1,6 +1,7 @@
 ﻿
 namespace DesignPatterns.Behavioral.Observer
 {
+    // https://refactoring.guru/design-patterns/observer
     public class ObserverPatternRunner : PatternRunner
     {
         public override void Run()
