@@ -5,6 +5,7 @@ using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Behavioral.Command;
 using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Behavioral.State;
+using DesignPatterns.Behavioral.Strategy;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Structural.Composite;
@@ -79,6 +80,9 @@ namespace DesignPatterns
 
             StatePatternRunner statePatternRunner = new StatePatternRunner();
             statePatternRunner.RunWithNewLine();
+
+            StrategyPatternRunner strategyPatternRunner = new StrategyPatternRunner();
+            strategyPatternRunner.RunWithNewLine();
         }
     }
 }
