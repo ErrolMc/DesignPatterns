@@ -3,6 +3,7 @@ using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Behavioral.Command;
+using DesignPatterns.Behavioral.Memento;
 using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Behavioral.State;
 using DesignPatterns.Behavioral.Strategy;
@@ -83,6 +84,9 @@ namespace DesignPatterns
 
             StrategyPatternRunner strategyPatternRunner = new StrategyPatternRunner();
             strategyPatternRunner.RunWithNewLine();
+
+            MementoPatternRunner mementoPatternRunner = new MementoPatternRunner();
+            mementoPatternRunner.RunWithNewLine();
         }
     }
 }
