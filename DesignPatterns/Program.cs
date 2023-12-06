@@ -3,6 +3,7 @@ using DesignPatterns.Architectural.FactoryMethod;
 using DesignPatterns.Architectural.Prototype;
 using DesignPatterns.Architectural.Singleton;
 using DesignPatterns.Behavioral.Command;
+using DesignPatterns.Behavioral.Iterator;
 using DesignPatterns.Behavioral.Memento;
 using DesignPatterns.Behavioral.Observer;
 using DesignPatterns.Behavioral.State;
@@ -87,6 +88,9 @@ namespace DesignPatterns
 
             MementoPatternRunner mementoPatternRunner = new MementoPatternRunner();
             mementoPatternRunner.RunWithNewLine();
+
+            IteratorPatternRunner iteratorPatternRunner = new IteratorPatternRunner();
+            iteratorPatternRunner.RunWithNewLine();
         }
     }
 }
